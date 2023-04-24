@@ -40,7 +40,7 @@ public class CommonController {
     private String basePath;
 
 
-    @ApiOperation("文件下载")
+    @ApiOperation("文件上传")
     @PostMapping("/upload")
     public R<String> upload(MultipartFile file) {
         log.info("file:{}", file.toString());
